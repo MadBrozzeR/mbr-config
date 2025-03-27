@@ -24,6 +24,11 @@ Config.prototype.valueOf = function () {
   return this.config;
 };
 
+Config.use = function (file, defaults) {
+  const config = new Config(file, defaults);
+  return config.config;
+};
+
 module.exports = {
   __esModule: true,
   default: Config
