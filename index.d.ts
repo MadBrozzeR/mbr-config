@@ -3,7 +3,7 @@ declare class Config<C extends {}> {
 
   config: C;
 
-  static use (file: string, defaults: C): C;
+  static use<C> (file: string, defaults: C): C;
 
   constructor (file: string, defaults: C): void;
 
